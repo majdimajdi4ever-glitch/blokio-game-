@@ -14,38 +14,57 @@ button{font:inherit;color:inherit}.app{width:min(100%,480px);min-height:100dvh;m
 header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.brand{font-size:29px;font-weight:900;letter-spacing:2px;line-height:1;background:linear-gradient(110deg,#c5adff,#73e5ff 55%,#ff9bd7);background-clip:text;-webkit-background-clip:text;color:transparent}.tag{font-size:9px;letter-spacing:2px;color:#aaa4c9;margin-top:5px}
 .round{width:42px;height:42px;border-radius:14px;border:1px solid #ffffff18;background:#ffffff0b;font-size:18px}
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:10px}.stat{background:linear-gradient(145deg,#2b2849,#1b1a31);border:1px solid #ffffff18;border-radius:16px;text-align:center;padding:6px}.stat small{display:block;color:var(--muted);font-size:11px}.stat b{font-size:24px;line-height:1.5}#score{color:#bda8ff}#best{color:#79ddf5}
-.instruction{text-align:center;color:#c9c4e1;font-size:12px;margin:2px 0 8px}.board-frame{width:100%;padding:8px;border-radius:19px;background:linear-gradient(145deg,#49436b,#272443);border:1px solid #ffffff25;box-shadow:0 12px 35px #0005}.board{width:100%;aspect-ratio:1;display:grid;grid-template-columns:repeat(8,minmax(0,1fr));grid-template-rows:repeat(8,minmax(0,1fr));gap:4px;touch-action:none}
+.instruction{text-align:center;color:#c9c4e1;font-size:12px;margin:2px 0 8px}.board-frame{width:100%;padding:8px;border-radius:19px;background:linear-gradient(145deg,#49436b,#272443);border:1px solid #ffffff25;box-shadow:0 12px 35px #0005}.board{direction:ltr;width:100%;aspect-ratio:1;display:grid;grid-template-columns:repeat(8,minmax(0,1fr));grid-template-rows:repeat(8,minmax(0,1fr));gap:4px;touch-action:none}
 .cell{min-width:0;min-height:0;border-radius:7px;background:linear-gradient(145deg,#24223e,#1a192f);border:1px solid #ffffff08;position:relative}.cell.filled{border:1px solid #ffffff38;box-shadow:inset 2px 2px 3px #ffffff55,inset -3px -4px 5px #0003,0 2px 4px #0004}.cell.preview{outline:2px solid #ffffffb8;filter:brightness(1.35)}.cell.bad{outline:2px solid #ff7373;filter:brightness(1.2)}
 .purple{background:linear-gradient(145deg,#d4c0ff,#956df0 58%,#6844c7)!important}.blue{background:linear-gradient(145deg,#b2f2ff,#4dbfe9 58%,#258bc5)!important}.pink{background:linear-gradient(145deg,#ffd0ef,#ed83c9 58%,#c34c9a)!important}.orange{background:linear-gradient(145deg,#ffe5b2,#ffb452 58%,#d77b29)!important}.green{background:linear-gradient(145deg,#c1ffe0,#58dca1 58%,#209e6a)!important}.yellow{background:linear-gradient(145deg,#fff5b5,#f4d65f 58%,#c99b29)!important}
+.profile{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 9px;padding:8px 11px;border:1px solid #ffffff18;border-radius:14px;background:#ffffff09}
+.profile-name{font-size:12px;color:#e9e4ff;font-weight:800;max-width:55%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.coins{font-size:12px;color:#ffdb83;font-weight:900}.profile button{border:0;background:transparent;color:#c8b9ff;font-weight:800;font-size:11px}
+.shop-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}.shop-item{border:1px solid #ffffff20;background:#ffffff0a;border-radius:14px;padding:12px 8px;text-align:center;font-size:11px}
+.shop-item strong{display:block;font-size:13px;margin-bottom:5px}.shop-item button{margin-top:8px;border:0;border-radius:9px;background:#8063df;padding:6px 12px;font-weight:800}.shop-item button:disabled{opacity:.45}
+.name-input{width:100%;margin:10px 0 4px;padding:11px;border:1px solid #ffffff25;border-radius:12px;background:#111020;color:white;text-align:center;font:inherit;outline:none}
 .combo{height:20px;text-align:center;color:#ffd27a;font-size:12px;font-weight:900;opacity:0}.combo.show{opacity:1}
 .pieces-title{text-align:center;color:#c9c4e1;font-size:12px;margin:6px 0}.tray{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;min-height:78px}.piece-slot{height:78px;display:flex;align-items:center;justify-content:center;border-radius:16px;background:linear-gradient(145deg,#2b2849,#1b1a31);border:1px solid #ffffff18;touch-action:none}.piece-slot.used{opacity:.18}
-.mini{display:grid;grid-template-columns:repeat(4,clamp(10px,3.2vw,14px));grid-template-rows:repeat(4,clamp(10px,3.2vw,14px));gap:3px;pointer-events:none}.mini i{border-radius:4px;box-shadow:inset 1px 1px 2px #ffffff77,inset -1px -2px 2px #0003}
+.mini{direction:ltr;display:grid;grid-template-columns:repeat(4,clamp(10px,3.2vw,14px));grid-template-rows:repeat(4,clamp(10px,3.2vw,14px));gap:3px;pointer-events:none}.mini i{border-radius:4px;box-shadow:inset 1px 1px 2px #ffffff77,inset -1px -2px 2px #0003}
 .actions{display:flex;gap:9px;margin-top:11px}.btn{flex:1;border:1px solid #ffffff18;background:#ffffff0c;border-radius:14px;padding:9px 7px;font-size:12px;font-weight:800}.btn.primary{border:0;background:linear-gradient(120deg,#9a7aff,#7053d9);box-shadow:0 5px 18px #8063ef44}.note{text-align:center;color:#77758f;font-size:10px;margin-top:9px}
 .screen{position:fixed;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;padding:24px;background:#090914e8;backdrop-filter:blur(14px)}.screen.hidden{display:none}.dialog{width:min(100%,350px);padding:27px 22px;border:1px solid #ffffff24;border-radius:27px;text-align:center;background:radial-gradient(ellipse at top,#39305d,#1a192e 70%);box-shadow:0 25px 70px #0009}.biglogo{font-size:47px;line-height:1.15;font-weight:900;letter-spacing:2px;background:linear-gradient(110deg,#c5adff,#73e5ff 55%,#ff9bd7);background-clip:text;-webkit-background-clip:text;color:transparent}.subtitle{font-size:10px;letter-spacing:3px;color:#aaa4c9;margin:4px 0 19px}.dialog h2{font-size:21px;margin:8px 0}.dialog p{color:#b8b4d0;font-size:12px;line-height:1.9;margin:8px 0 18px}.dialog .btn{width:100%;padding:13px;margin-top:8px}.secondary{background:#ffffff0b}
 #ghost{position:fixed;z-index:30;display:none;pointer-events:none;transform:translate(-50%,-50%);filter:drop-shadow(0 8px 9px #0008);opacity:.96}#ghost .mini{grid-template-columns:repeat(4,22px);grid-template-rows:repeat(4,22px);gap:4px}#ghost .mini i{border-radius:6px}
 @media(max-height:720px){.app{padding-top:8px}.board-frame{padding:6px}.board{gap:3px}.piece-slot{height:68px}.tray{min-height:68px}.stat{padding:4px}.pieces-title{margin:4px 0}}
+body.skin-ocean .board-frame{background:linear-gradient(145deg,#28617a,#1b354e)}
+body.skin-sunset .board-frame{background:linear-gradient(145deg,#805044,#3d263c)}
+body.skin-mint .board-frame{background:linear-gradient(145deg,#286d60,#1b3c3c)}
 </style>
 </head>
 <body>
 <main class="app">
 <header><div><div class="brand">BLOKIO</div><div class="tag">ENDLESS BLOCK PUZZLE</div></div><button class="round" id="sound">♫</button></header>
-<section class="stats"><div class="stat"><small>النقاط</small><b id="score">0</b></div><div class="stat"><small>أفضل نتيجة</small><b id="best">0</b></div></section>
+<div class="profile"><span class="profile-name" id="playerLabel">اللاعب: مجدي</span><span class="coins">🪙 <b id="coinCount">0</b></span><button id="editName">تعديل الاسم</button></div><section class="stats"><div class="stat"><small>النقاط</small><b id="score">0</b></div><div class="stat"><small>أفضل نتيجة</small><b id="best">0</b></div></section>
 <div class="instruction">ضع القطع وامسح الصفوف والأعمدة</div>
 <div class="board-frame"><div class="board" id="board"></div></div>
 <div class="combo" id="combo">COMBO!</div><div class="pieces-title">اسحب قطعة إلى الساحة</div><div class="tray" id="tray"></div>
-<div class="actions"><button class="btn" id="newGame">↻ لعبة جديدة</button><button class="btn primary" id="how">؟ طريقة اللعب</button></div><div class="note">BLOKIO · PLAY ENDLESSLY</div>
+<div class="actions"><button class="btn" id="newGame">↻ لعبة جديدة</button><button class="btn" id="shop">🛍 المتجر</button><button class="btn primary" id="how">؟ طريقة اللعب</button></div><div class="note">BLOKIO · PLAY ENDLESSLY</div>
 </main>
-<div class="screen" id="home"><div class="dialog"><div class="biglogo">BLOKIO</div><div class="subtitle">ENDLESS BLOCK PUZZLE</div><h2>جاهز للتحدي؟</h2><p>رتّب القطع الملونة، أكمل الصفوف والأعمدة، واجمع أكبر عدد من النقاط. كم ستصل؟</p><button class="btn primary" id="play">ابدأ اللعب</button><button class="btn secondary" id="homeHow">كيف ألعب؟</button></div></div>
-<div class="screen hidden" id="modal"><div class="dialog"><div class="biglogo" style="font-size:35px">BLOKIO</div><h2 id="modalTitle">طريقة اللعب</h2><p id="modalText">اسحب القطع إلى الشبكة. أكمل صفاً أو عموداً لمسحه.</p><button class="btn primary" id="modalButton">فهمت</button></div></div>
+<div class="screen" id="home"><div class="dialog"><div class="biglogo">BLOKIO</div><div class="subtitle">ENDLESS BLOCK PUZZLE</div><h2>جاهز للتحدي؟</h2><p>رتّب القطع الملونة، أكمل الصفوف والأعمدة، واجمع أكبر عدد من النقاط.</p><input class="name-input" id="nameInput" maxlength="16" placeholder="اكتب اسم اللاعب"><button class="btn primary" id="play">ابدأ اللعب</button><button class="btn secondary" id="homeHow">كيف ألعب؟</button></div></div>
+<div class="screen hidden" id="shopScreen"><div class="dialog"><div class="biglogo" style="font-size:35px">BLOKIO SHOP</div><h2>متجر المظاهر</h2><p>اجمع العملات أثناء اللعب وافتح ألواناً جديدة للشبكة.</p><div class="shop-grid" id="shopGrid"></div><button class="btn secondary" id="closeShop">إغلاق</button></div></div><div class="screen hidden" id="modal"><div class="dialog"><div class="biglogo" style="font-size:35px">BLOKIO</div><h2 id="modalTitle">طريقة اللعب</h2><p id="modalText">اسحب القطع إلى الشبكة. أكمل صفاً أو عموداً لمسحه.</p><button class="btn primary" id="modalButton">فهمت</button></div></div>
 <div id="ghost"><div class="mini" id="ghostMini"></div></div>
 <script>
 const N=8,board=document.getElementById('board'),tray=document.getElementById('tray'),scoreNode=document.getElementById('score'),bestNode=document.getElementById('best'),comboNode=document.getElementById('combo');
 const colors=['purple','blue','pink','orange','green','yellow'];
 const shapes=[[[0,0]],[[0,0],[0,1]],[[0,0],[1,0]],[[0,0],[0,1],[0,2]],[[0,0],[1,0],[2,0]],[[0,0],[0,1],[1,0],[1,1]],[[0,0],[0,1],[1,1]],[[0,1],[1,0],[1,1],[1,2]],[[0,0],[1,0],[2,0],[2,1]],[[0,0],[0,1],[0,2],[0,3]],[[0,0],[1,0],[2,0],[3,0]],[[0,0],[0,1],[0,2],[1,0],[1,1],[1,2]],[[0,0],[1,0],[2,0],[2,1],[2,2]],[[0,0],[1,0],[1,1],[2,1]],[[0,1],[1,0],[1,1],[2,0]],[[0,0],[0,1],[1,1],[1,2]]];
 let grid=[],pieces=[],score=0,best=0,combo=0,active=false,drag=null,audio=null,sound=true;
+let playerName='مجدي',coins=0,owned=['default'],skin='default';
+try{playerName=localStorage.getItem('blokio-name')||'مجدي';coins=Number(localStorage.getItem('blokio-coins'))||0;owned=JSON.parse(localStorage.getItem('blokio-owned')||'["default"]');skin=localStorage.getItem('blokio-skin')||'default'}catch(e){}
 try{best=Number(localStorage.getItem('blokio-best'))||0}catch(e){}bestNode.textContent=best;
+document.getElementById('playerLabel').textContent='اللاعب: '+playerName;
+document.getElementById('coinCount').textContent=coins;
+document.getElementById('nameInput').value=playerName;
+document.body.classList.add('skin-'+skin);
 function buildBoard(){board.innerHTML='';grid=[];for(let r=0;r<N;r++)for(let c=0;c<N;c++){let el=document.createElement('div');el.className='cell';el.dataset.r=r;el.dataset.c=c;board.appendChild(el);grid.push({color:null,el})}}
-function makePiece(){return{shape:shapes[Math.floor(Math.random()*shapes.length)].map(p=>[...p]),color:colors[Math.floor(Math.random()*colors.length)],used:false}}
+function makePiece(){
+ let fitting=shapes.filter(sh=>Array.from({length:N},(_,r)=>Array.from({length:N},(_,c)=>valid(sh,r,c))).some(row=>row.some(Boolean)));
+ let pool=fitting.length?fitting:shapes,sh=pool[Math.floor(Math.random()*pool.length)];
+ return{shape:sh.map(p=>[...p]),color:colors[Math.floor(Math.random()*colors.length)],used:false}
+}
 function drawTray(){tray.innerHTML='';pieces.forEach((p,i)=>{let slot=document.createElement('div');slot.className='piece-slot'+(p.used?' used':'');slot.dataset.index=i;let mini=document.createElement('div');mini.className='mini';p.shape.forEach(([r,c])=>{let b=document.createElement('i');b.className=p.color;b.style.gridRow=r+1;b.style.gridColumn=c+1;mini.appendChild(b)});slot.appendChild(mini);tray.appendChild(slot)})}
 function refill(){pieces=[makePiece(),makePiece(),makePiece()];drawTray()}
 function valid(shape,r,c){return shape.every(([y,x])=>{let yy=r+y,xx=c+x;return yy>=0&&yy<N&&xx>=0&&xx<N&&!grid[yy*N+xx].color})}
@@ -53,7 +72,10 @@ function hasMove(){return pieces.some(p=>!p.used&&Array.from({length:N},(_,r)=>A
 function beep(f=450,d=.07){if(!sound)return;try{audio=audio||new(window.AudioContext||window.webkitAudioContext)();let o=audio.createOscillator(),g=audio.createGain();o.connect(g);g.connect(audio.destination);o.frequency.value=f;g.gain.setValueAtTime(.045,audio.currentTime);g.gain.exponentialRampToValueAtTime(.001,audio.currentTime+d);o.start();o.stop(audio.currentTime+d)}catch(e){}}
 function updateScore(){scoreNode.textContent=score.toLocaleString('en-US');if(score>best){best=score;bestNode.textContent=best.toLocaleString('en-US');try{localStorage.setItem('blokio-best',best)}catch(e){}}}
 function clearFull(){let ids=new Set();for(let r=0;r<N;r++)if(grid.slice(r*N,(r+1)*N).every(x=>x.color))for(let c=0;c<N;c++)ids.add(r*N+c);for(let c=0;c<N;c++)if(Array.from({length:N},(_,r)=>grid[r*N+c]).every(x=>x.color))for(let r=0;r<N;r++)ids.add(r*N+c);if(ids.size){ids.forEach(i=>{grid[i].color=null;grid[i].el.className='cell clearing'});setTimeout(()=>ids.forEach(i=>grid[i].el.className='cell'),180);let lines=Math.max(1,Math.round(ids.size/N));combo++;score+=lines*100*Math.min(combo,5);comboNode.textContent=combo>1?'COMBO ×'+combo:'NICE!';comboNode.classList.add('show');beep(680,.12)}else{combo=0;comboNode.classList.remove('show')}}
-function place(i,r,c){let p=pieces[i];if(!p||p.used||!valid(p.shape,r,c)){beep(130,.08);return false}p.shape.forEach(([y,x])=>{let cell=grid[(r+y)*N+c+x];cell.color=p.color;cell.el.className='cell filled '+p.color});p.used=true;score+=p.shape.length*10;clearFull();updateScore();beep(420,.06);if(pieces.every(x=>x.used))refill();else drawTray();if(!hasMove())endGame();return true}
+function place(i,r,c){let p=pieces[i];if(!p||p.used||!valid(p.shape,r,c)){beep(130,.08);return false}p.shape.forEach(([y,x])=>{let cell=grid[(r+y)*N+c+x];cell.color=p.color;cell.el.className='cell filled '+p.color});p.used=true;score+=p.shape.length*10;coins+=p.shape.length;
+document.getElementById('coinCount').textContent=coins;
+try{localStorage.setItem('blokio-coins',coins)}catch(e){}
+clearFull();updateScore();beep(420,.06);if(pieces.every(x=>x.used))refill();else drawTray();if(!hasMove())endGame();return true}
 function start(){grid.forEach(x=>{x.color=null;x.el.className='cell'});score=0;combo=0;active=true;scoreNode.textContent='0';comboNode.classList.remove('show');refill();document.getElementById('home').classList.add('hidden');document.getElementById('modal').classList.add('hidden')}
 function showModal(title,text,button,action){document.getElementById('modalTitle').textContent=title;document.getElementById('modalText').textContent=text;let b=document.getElementById('modalButton');b.textContent=button;b.onclick=action;document.getElementById('modal').classList.remove('hidden')}
 function endGame(){active=false;showModal('انتهت اللعبة!','نتيجتك: '+score.toLocaleString('en-US')+' نقطة. أفضل نتيجة: '+best.toLocaleString('en-US')+'.','العب مرة ثانية',start)}
@@ -61,13 +83,33 @@ function help(){showModal('طريقة اللعب','اسحب أي قطعة من �
 function renderGhost(p){let el=document.getElementById('ghostMini');el.innerHTML='';p.shape.forEach(([r,c])=>{let b=document.createElement('i');b.className=p.color;b.style.gridRow=r+1;b.style.gridColumn=c+1;el.appendChild(b)});document.getElementById('ghost').style.display='block'}
 function ghostAt(x,y){let g=document.getElementById('ghost');g.style.left=x+'px';g.style.top=y+'px'}
 function clearPreview(){board.querySelectorAll('.preview,.bad').forEach(el=>el.classList.remove('preview','bad'))}
-function getTarget(x,y,p){let rect=board.getBoundingClientRect();if(x<rect.left||x>rect.right||y<rect.top||y>rect.bottom)return null;let col=Math.min(7,Math.floor((x-rect.left)/rect.width*N)),row=Math.min(7,Math.floor((y-rect.top)/rect.height*N));let maxR=Math.max(...p.shape.map(a=>a[0])),maxC=Math.max(...p.shape.map(a=>a[1]));let top=Math.max(0,Math.min(N-1-maxR,row-Math.floor(maxR/2))),left=Math.max(0,Math.min(N-1-maxC,col-Math.floor(maxC/2)));return{r:top,c:left}}
+function getTarget(x,y,p){
+ let rect=board.getBoundingClientRect();if(x<rect.left||x>rect.right||y<rect.top||y>rect.bottom)return null;
+ let col=0,row=0,bestX=Infinity,bestY=Infinity;
+ for(let r=0;r<N;r++)for(let c=0;c<N;c++){
+  let q=grid[r*N+c].el.getBoundingClientRect(),dx=Math.abs(x-(q.left+q.width/2)),dy=Math.abs(y-(q.top+q.height/2));
+  if(dx<bestX){bestX=dx;col=c}if(dy<bestY){bestY=dy;row=r}
+ }
+ let minR=Math.min(...p.shape.map(a=>a[0])),maxR=Math.max(...p.shape.map(a=>a[0]));
+ let minC=Math.min(...p.shape.map(a=>a[1])),maxC=Math.max(...p.shape.map(a=>a[1]));
+ let anchorR=Math.round((minR+maxR)/2),anchorC=Math.round((minC+maxC)/2);
+ return{r:Math.max(-minR,Math.min(N-1-maxR,row-anchorR)),c:Math.max(-minC,Math.min(N-1-maxC,col-anchorC))}
+}
 function preview(p,pos){clearPreview();if(!pos)return;let ok=valid(p.shape,pos.r,pos.c);p.shape.forEach(([y,x])=>grid[(pos.r+y)*N+pos.c+x].el.classList.add(ok?'preview':'bad'))}
 tray.addEventListener('pointerdown',e=>{let slot=e.target.closest('.piece-slot');if(!slot||!active)return;let i=Number(slot.dataset.index),p=pieces[i];if(!p||p.used)return;e.preventDefault();drag={i,p};renderGhost(p);ghostAt(e.clientX,e.clientY);preview(p,getTarget(e.clientX,e.clientY,p))});
 window.addEventListener('pointermove',e=>{if(!drag)return;e.preventDefault();ghostAt(e.clientX,e.clientY);preview(drag.p,getTarget(e.clientX,e.clientY,drag.p))},{passive:false});
 window.addEventListener('pointerup',e=>{if(!drag)return;let d=drag,pos=getTarget(e.clientX,e.clientY,d.p);drag=null;document.getElementById('ghost').style.display='none';clearPreview();if(pos)place(d.i,pos.r,pos.c)});
 window.addEventListener('pointercancel',()=>{drag=null;document.getElementById('ghost').style.display='none';clearPreview()});
-document.getElementById('play').onclick=start;document.getElementById('homeHow').onclick=help;document.getElementById('how').onclick=help;
+function saveName(){let v=(document.getElementById('nameInput').value||'').trim().slice(0,16);if(v){playerName=v;try{localStorage.setItem('blokio-name',v)}catch(e){}document.getElementById('playerLabel').textContent='اللاعب: '+v}}
+function renderShop(){
+ let items=[{id:'default',name:'البنفسجي الأصلي',price:0},{id:'ocean',name:'المحيط',price:35},{id:'sunset',name:'الغروب',price:60},{id:'mint',name:'النعناع',price:90}],host=document.getElementById('shopGrid');host.innerHTML='';
+ items.forEach(it=>{let own=owned.includes(it.id),box=document.createElement('div');box.className='shop-item';box.innerHTML='<strong>'+it.name+'</strong><span>🪙 '+it.price+'</span><br><button>'+(skin===it.id?'مفعّل':own?'استخدم':'شراء')+'</button>';
+ let b=box.querySelector('button');b.disabled=skin===it.id||(!own&&coins<it.price);b.onclick=()=>{if(!own){coins-=it.price;owned.push(it.id)}skin=it.id;try{localStorage.setItem('blokio-coins',coins);localStorage.setItem('blokio-owned',JSON.stringify(owned));localStorage.setItem('blokio-skin',skin)}catch(e){}document.getElementById('coinCount').textContent=coins;document.body.className='skin-'+skin;renderShop()};host.appendChild(box)})
+}
+document.getElementById('play').onclick=()=>{saveName();start()};
+document.getElementById('editName').onclick=()=>{let n=prompt('اكتب اسم اللاعب',playerName);if(n!==null){playerName=n.trim().slice(0,16)||playerName;try{localStorage.setItem('blokio-name',playerName)}catch(e){}document.getElementById('playerLabel').textContent='اللاعب: '+playerName}};
+document.getElementById('shop').onclick=()=>{renderShop();document.getElementById('shopScreen').classList.remove('hidden')};
+document.getElementById('closeShop').onclick=()=>document.getElementById('shopScreen').classList.add('hidden');document.getElementById('homeHow').onclick=help;document.getElementById('how').onclick=help;
 document.getElementById('newGame').onclick=()=>{if(active)showModal('لعبة جديدة؟','ستبدأ جولة جديدة وستُصفّر نقاط الجولة الحالية.','ابدأ من جديد',start);else start()};
 document.getElementById('sound').onclick=e=>{sound=!sound;e.currentTarget.textContent=sound?'♫':'♪';if(sound)beep()};
 buildBoard();
